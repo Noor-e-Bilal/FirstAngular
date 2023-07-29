@@ -278,10 +278,10 @@ function InitJs() {
     var animateSpan = jQuery(".arlo_tm_animation_text_word");
     animateSpan.typed({
       strings: [
-        "I am Freelancer",
-        "I am Cross-Platform Software Engineer",
-        "I am Graphic Designer",
-        "I am Mobile Application Developer",
+        "'m Freelancer",
+        "'m Cross-Platform Software Engineer",
+        "'m Graphic Designer",
+        "'m Mobile Application Developer",
       ],
       loop: true,
       startDelay: 1e3,
@@ -599,4 +599,27 @@ function InitJs() {
       });
     }
   }
+}
+
+function arlo_tm_ripple() {
+  "use strict";
+  jQuery("#ripple").ripples({
+    resolution: 500,
+    dropRadius: 20,
+    perturbance: 0.04,
+  });
+}
+
+function arlo_tm_glitch() {
+  $(".glitch").mgGlitch({
+    destroy: false,
+    glitch: true,
+    scale: true,
+    blend: true,
+    blendModeType: "hue",
+    glitch1TimeMin: 200,
+    glitch1TimeMax: 400,
+    glitch2TimeMin: 10,
+    glitch2TimeMax: 100,
+  });
 }

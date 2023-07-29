@@ -1,3 +1,6 @@
+import { GlitchSliderComponent } from './../main/glitch-slider/glitch-slider.component';
+import { WaterSliderComponent } from './../main/water-slider/water-slider.component';
+import { ParticleSliderComponent } from './../main/particle-slider/particle-slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from '../main/main.component';
 import { UsersService } from './../users/users.service';
@@ -26,6 +29,9 @@ import { PreloaderComponent } from './preloader/preloader.component';
     PreloaderComponent,
     MainComponent,
     FooterComponent,
+    ParticleSliderComponent,
+    WaterSliderComponent,
+    GlitchSliderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [UsersService],
