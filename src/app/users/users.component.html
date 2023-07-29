@@ -1,0 +1,11 @@
+<div class="text-center">
+  <h1 class="text">Total {{ totalUser }} Users</h1>
+</div>
+
+<div class="text-center">
+  <ul>
+    <li *ngFor="let user of Users">
+      <a class="btn btn-link">{{ user }}</a>
+    </li>
+  </ul>
+</div>
